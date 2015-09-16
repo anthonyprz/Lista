@@ -1,0 +1,9 @@
+
+nombre de la base de datos: usuarios
+
+
+create table id (
+nombre varchar(15),
+user varchar(15),
+pass varchar(8)
+);
