@@ -4,16 +4,36 @@
 <meta charset="utf-8"/>
 	<title>Lista</title>
   <link rel="StyleSheet" href="LESS.css" type="text/css">
+
+  <style type="text/css">
+
+  #cajalogin{
+    border: solid;
+    width: 400px;
+    height: 400px;
+    border-color: white;
+    margin: auto;
+
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(175,206,248,0.81) 50%, rgba(0,0,0,0.62) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(175,206,248,0.81)), color-stop(100%, rgba(0,0,0,0.62)));
+    background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(175,206,248,0.81) 50%, rgba(0,0,0,0.62) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(175,206,248,0.81) 50%, rgba(0,0,0,0.62) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(175,206,248,0.81) 50%, rgba(0,0,0,0.62) 100%);
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(175,206,248,0.81) 50%, rgba(0,0,0,0.62) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=1 );
+  } 
+  #formularios{
+    margin-top: 35px;
+ 
+
+  }
+  </style>
 </head>
-<body>
+<body background="wall.jpg">
 
-
-  <!--<button id="login" class="boton azul">login</button>
-
-  <button id="registrar" class="boton azul">registrar</button>
-  -->
-
-
+<div id="cajalogin">
+<div id="formularios">
 
 <form method="post" action="conexion.php">
   
@@ -28,19 +48,18 @@
   <input type="submit" value="registrar" class="boton azul"/>
 </form>
 
-
-<!--
-  <form method="post" action="conexion.php">
+  <form method="post" action="login.php">
     <p>
-      <input type="text" name="nombre" value="" placeholder="Nombre" class="nombra">
-      <input type="password" name="pass" value="" placeholder="contraseña" class="contraseña">
-    <label>
-      <input type="checkbox" name="remember_me" id="remember_me">recordar
-    </label>-->
-    <!-- <input class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off" type="submit" name="commit" value="Login">
-    <button type="submit" class="boton azul">registrar</button>
+      <input type="text" name="usuario" value="" placeholder="usuario" class="nombre">
+        <br/>
+      <input type="password" name="pass" value="" placeholder="password" class="contraseña">
+        <br/>
+  
+  <input class="boton azul" data-toggle="button" aria-pressed="false" autocomplete="off" type="submit" name="commit" value="Login">
+   
     </p>
   </form>
--->
+  </div><!--formularios -->
+</div><!--cajalogin -->
 </body>
 </html>

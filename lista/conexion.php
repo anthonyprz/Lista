@@ -18,6 +18,8 @@ mysql_select_db("usuarios", $conexion) or die ("error al tratar de conectar");
 	}
 	else{
 		echo "error al añadir usuario";
+		echo "<br/>";
+		echo "las contraseñas no coinciden";
 	}
 
 
